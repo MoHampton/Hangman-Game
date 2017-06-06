@@ -1,0 +1,49 @@
+#brand {
+	width: 250px;
+	height: 90px;
+	float: left;
+}
+
+#hangman-logo {
+	width: 650px;
+	height: 200px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+p {
+	font-family: 'Maven Pro', sans-serif;
+	
+}
+
+#wordToGuess {
+	font-size: 48px;
+	margin: 50px;
+}
+
+.img-circle {
+	width: 100px;
+	height: 100px;
+}
+
+body {
+	background-image: url("../images/background-image2.jpg");
+	background-repeat: no-repeat;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+}
+
+.jumbotron {
+	color: blue;
+	z-index: 1;
+
+}
+
+#buttons {
+	margin: 15px;
+}
+
+.btn {
+	margin: 1px;
+}

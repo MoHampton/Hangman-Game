@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" rel="stylesheet">
+		
+		
+	</head>
+	
+<!-- Add a wrapper to flush the brand logo?? -->
+
+	<body>
+		<!-- Brand bar at top of page -->
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">
+				<img id="brand" src="assets/images/NoahLogo.svg.png"> 
+
+			  </a>
+			</div>
+		  </div>
+		</nav>
+		<!-- Hangman logo -->
+		<div class="container text-center">
+			<img id="hangman-logo" class="img-thumbnail" src="assets/images/NoahsArk.png">
+		</div>
+	
+		<!-- Game window -->
+		<div id="game-window" class="container text-center">
+			<div class="jumbotron">
+				<h4> Press Any Key To Start </h4>
+				<img id="portrait" class="img-responsive img-circle center-block" src="assets/images/animalquestion.jpg">
+					
+					<div class="word-guess-area">
+					<p id="wordToGuess" class="text-center"></p>
+					
+					</div>
+				
+					<div class="game-instructions">
+					<h2 class="text-center message">Guess the Animal!</h2>
+					 <h3> You have <span id="numGuesses"></span> guesses left. </h3>
+					</div>
+					
+					<p> Letters Guessed: <span id="wrongGuesses"></span> </p>
+					
+					<p> Hooray!: <span id="winCounter">0</span> </p> <p> Oh No!:  <span id="lossCounter">0</span> </p>
+
+					<!-- <div class=remaining-guesses>
+					<p>Remaining Guesses: <span id="numGuesses"></span></p>
+					</div>
+					-->
+<!--Will add buttons later -->
+					<!--<div id="buttons">
+					</div> 
+					<button id="newGame" type="button" class="btn btn-success">New Game</button> -->
+			 </div>
+		</div>
+
+
+		<script src="assets/javascript/game.js"></script>
+	</body>
+	
+</html>
