@@ -162,6 +162,9 @@ function winLose()
 		document.getElementById('winCounter').innerHTML = winCount;
 		var correct = new Audio('assets/audio/TaDa.wav');
 		correct.play();
+		//setTimeout(function(){ 
+		//	alert() 
+		//}, 1000);//
 		alert('You Got It!');
 		reset();
 	}
@@ -186,7 +189,7 @@ startGame();
 
 document.onkeyup = function(event)
 {
-	test = true;
+	var test = true;
 	var letterGuessed = event.key;
 	for(var i = 0; i < letterCount.length; i++)
 	{	
@@ -198,7 +201,7 @@ document.onkeyup = function(event)
 			console.log('Spliced Word is = ' + spliceDword);
 
 			compareLetters(letterGuessed);
-			winLose();
+			setTimeout(winLose, 1000);
 		}
 	}		
 		
