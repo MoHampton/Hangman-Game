@@ -81,7 +81,6 @@ function startGame()
 	numBlanks = lettersInWord.length;
 	
 	//RESET
-	//===========================================================
 	rightGuessCounter = 0;
 	guessesLeft = 6;
 	wrongLetters =[];
